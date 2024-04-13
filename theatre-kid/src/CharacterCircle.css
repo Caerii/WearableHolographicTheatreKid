@@ -1,0 +1,45 @@
+.circle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.circle-item {
+    position: absolute;
+    width: 50%;  /* Adjust size as needed */
+    height: 50%; /* Adjust size as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* magnitude = 50%; */
+
+/* Correctly place and rotate each image */
+.item-1 { /* Top */
+    top: 0;
+    left: 50%;
+    transform: translateX(-40%) rotateX(0deg) translateY(-40%) rotate(0deg);
+}
+.item-2 { /* Right */
+    top: 50%;
+    right: 0;
+    transform: translateY(-40%) rotateY(0deg) translateX(40%) rotate(90deg);
+}
+.item-3 { /* Bottom */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-40%) rotateX(180deg) translateY(-40%) rotate(0deg);
+}
+.item-4 { /* Left */
+    top: 50%;
+    left: 0;
+    transform: translateY(-40%) rotateY(180deg) translateX(40%) rotate(90deg);
+}
+
+.circle-item img {
+    max-width: 100%;
+    transform: scale(0.5); /* Scale up the image to fill the pane if necessary */
+}

@@ -1,0 +1,70 @@
+/* Main container styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+/* Status message styling */
+.status-message {
+  color: #888;
+  margin-top: 20px;
+}
+
+/* Character circle layout */
+.character-circle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+}
+
+.character-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the div without stretching */
+}
+
+/* Positions for the character images */
+.item-1 { grid-column: 2 / 3; grid-row: 1 / 2; } /* Top */
+.item-2 { grid-column: 3 / 4; grid-row: 2 / 3; } /* Right */
+.item-3 { grid-column: 2 / 3; grid-row: 3 / 4; } /* Bottom */
+.item-4 { grid-column: 1 / 2; grid-row: 2 / 3; } /* Left */
