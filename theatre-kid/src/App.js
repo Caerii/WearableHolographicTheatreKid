@@ -9,7 +9,7 @@ function App() {
   const [audioChunks, setAudioChunks] = useState([]);
   const [transcript, setTranscript] = useState('');
   const [image, setImage] = useState('/steve.jpg'); // Assuming you have an image
-  // Add differnet images later, animated stuff as well
+  // Add differnet images later, animated stuff as well bruh work please
 
 
   useEffect(() => {
